@@ -2,7 +2,7 @@
 
 `Software Engineering Student`
 
-My name is Erick Magagna, i'm 20 years old, and i'm from Rio Grande do Sul, Brazil. Currently majoring in Software Engineering at La Salle University, focused on backend development with C#/.NET.
+My name is Erick Magagna, i'm 20 years old, and i'm from Rio Grande do Sul, Brazil. Currently majoring in Software Engineering at La Salle University, focused on backend development with C#/.NET. When I'm not coding, i'm composing some metal in guitar.
 
 ---
 ### Skills Stack
