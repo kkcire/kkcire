@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/csharp_header.gif" width="100%" alt="Erick Magagna Developer Profile" />
+  <img src="./assets/csharp_header_githubdark.png" width="100%" alt="Erick Magagna Developer Profile" />
 </div>
 
 ---
