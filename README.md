@@ -1,11 +1,37 @@
-## ERICK MAGAGNA
+# Erick Magagna
+### Software Engineering Student
 
-`Software Engineering Student`
+### 📝 About
+My name is Erick Magagna, i'm 20 years old, and i'm from Rio Grande do Sul, Brazil. Currently majoring in Software Engineering at La Salle University, focused on backend development with C#/.NET. When I'm not coding, I'm playing guitar 🎸.
 
 ---
 
-### 📝 About
-My name is Erick Magagna, i'm 20 years old, and i'm from Rio Grande do Sul, Brazil. Currently majoring in Software Engineering at La Salle University, focused on backend development with C#/.NET. When I'm not coding, I'm playing some metal 🎸.
+
+```csharp
+Developer erick = new()
+{
+    Name = "Erick Magagna",
+    Age = 20,
+    Role = "Software Engineering Student",
+
+    Stack = ["C#", ".NET", "EF Core", "SQL"],
+    Goal = "DevOps Engineer",
+    Interests = ["Backend", "Cloud", "DevOps"],
+    Learning = "ASP.NET Core",
+
+    Hobby = "Electric Guitar", // 🎸
+    Coffee = int.MaxValue,     // ☕
+
+    Location = "Brazil",      // 🌎
+    OpenToWork = true,
+
+    Contact = new
+    {
+        Email = "erickmagagna84@gmail.com",
+        LinkedIn = "https://www.linkedin.com/in/erick-magagna/"
+    }
+};
+```
 
 ---
 ### 🖥️ Stacks
@@ -78,6 +104,10 @@ My name is Erick Magagna, i'm 20 years old, and i'm from Rio Grande do Sul, Braz
 
 - Working on: Storage System (practicing EF Core)
 - Learning: SQL and ASP.NET Core REST API fundamentals
-- Goal: becoming a Cloud Architect
+- Goal: becoming a DevOps Engineer
 
 ---
+
+### 📫 **Contato:**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seuuser)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu@email.com)
