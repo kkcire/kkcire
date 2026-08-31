@@ -1,50 +1,12 @@
-<div align="center">
-  <img src="./assets/csharp_header_githubdark.png" width="100%" alt="Erick Magagna Developer Profile" />
-</div>
+<img src="./assets/csharp_header_githubdark.png" width="100%" alt="Erick Magagna Developer Profile"/>
 
----
+### 🛠️ **Stacks**
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![EF Core](https://img.shields.io/badge/EF_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
-### 🖥️ Stacks
-<img
-    align="left" 
-    alt="C#"
-    title="C#"
-    width="30px"
-    style="padding-right: 10px;"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-/>
-<img
-    align="left" 
-    alt=".NET" 
-    title=".NET"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="SQLite" 
-    title="SQLite" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Entity Framework Core"
-    title="Entity Framework Core" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/entityframeworkcore/entityframeworkcore-original.svg"
-/>
-
-<br/>
-<br/>
-
----
-
-### 🚀 Features
-
+### 🚀 **Features**
 <table>
   <tr>
     <td width="50%">
@@ -68,16 +30,7 @@
   </tr>
 </table>
 
----
+### 📫 **Contato:**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erick-magagna/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:erickmagagna84@gmail.com)
 
-### Currently
-
-- Working on: Storage System (practicing EF Core)
-- Learning: SQL and ASP.NET Core REST API fundamentals
-- Goal: becoming a DevOps Engineer
-
----
-
-### 📫 **Contato:**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seuuser)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu@email.com)
