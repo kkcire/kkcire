@@ -1,4 +1,11 @@
-# ERICK MAGAGNA
+<pre style="font-family: monospace; font-size: 10px; line-height: 10; overflow-x: auto; color: #ffffff;">
+███████╗██████╗ ██╗ ██████╗██╗  ██╗   ███╗   ███╗ █████╗  ██████╗  █████╗  ██████╗ ███╗   ██╗ █████╗ 
+██╔════╝██╔══██╗██║██╔════╝██║ ██╔╝   ████╗ ████║██╔══██╗██╔════╝ ██╔══██╗██╔════╝ ████╗  ██║██╔══██╗
+█████╗  ██████╔╝██║██║     █████╔╝    ██╔████╔██║███████║██║  ███╗███████║██║  ███╗██╔██╗ ██║███████║
+██╔══╝  ██╔══██╗██║██║     ██╔═██╗    ██║╚██╔╝██║██╔══██║██║   ██║██╔══██║██║   ██║██║╚██╗██║██╔══██║
+███████╗██║  ██║██║╚██████╗██║  ██╗   ██║ ╚═╝ ██║██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║ ╚████║██║  ██║
+╚══════╝╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝
+</pre>
 
 ## ABOUT
 I'm a Software Engineering student and, out of personal interest, I study software architecture and back-end development. I enjoy understanding, in a pragmatic way, how systems are organized and structured, and building solutions that work in practice and that other developers can easily understand and maintain — something I've been practicing with .NET.
