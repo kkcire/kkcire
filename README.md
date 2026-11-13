@@ -24,62 +24,68 @@ When I'm not studying or coding, I'm probably playing guitar. 🎸
 
 ## PROJECTS
 
-### 📦 Storage System
+### 1. STORAGE SYSTEM
 
-A storage management application built with C# and .NET, focused on software architecture, domain modeling, and maintainable code. Developed as a practical study of how to structure applications, organize responsibilities, and apply software design principles.
+A console-based storage management application built with C# and .NET, focused on software architecture, domain modeling, and maintainable code. Built as a practical study of how to structure applications and organize responsibilities.
 
 **Features**
-- Brand and product CRUD
-- Stock management
-- Relational data persistence
-- Rich-domain model
+- Brand and product management: register, update (full or partial), delete, search, and list
+- Products linked to brands; a brand can't be deleted while it has products
+- Interactive terminal interface built with Spectre.Console
 
-**Architecture & Design**
+**Key Design Decisions**
+- **Clean Architecture:** separates business rules, application logic, and infrastructure concerns into distinct layers, with dependencies pointing inward toward the Domain.
+- **Rich Domain Model:** private setters and static factories; entities enforce their own invariants through guard clauses.
+- **Repository Pattern & Dependency Inversion:** repository interfaces live in Application and are implemented in Infrastructure, so services never depend on EF Core.
+- **Database integrity:** unique indexes, restricted deletes, and EF Core migrations applied at startup.
+- **Testing:** unit tests for the domain, plus integration tests against a real SQL Server. Each test gets its own temporary database built from the real migrations, covering services, repositories, and constraints.
 
-The solution follows a layered architecture, separating business rules, application logic, and infrastructure concerns.
+---
+
+<details>
+<summary><b>Project Architecture Tree</b></summary>
 
 ```text
 StorageSystem/
-├── StorageSystem.Domain/
-│   ├── Entities/
-│   ├── Exceptions/
-│   └── Guards/
+├── src/
+│   ├── StorageSystem.Application/
+│   │   ├── Repository/
+│   │   └── Services/
+│   │
+│   ├── StorageSystem.Domain/
+│   │   ├── Entities/
+│   │   ├── Exceptions/
+│   │   └── Guards/
+│   │
+│   ├── StorageSystem.Infrastructure/
+│   │   ├── Data/
+│   │   ├── Repository/
+│   │   └── Migrations/
+│   │
+│   └── StorageSystem.Console/
+│       └── UI/
 │
-├── StorageSystem.Application/
-│   ├── Services/
-│   └── Repository/
-│
-├── StorageSystem.Infrastructure/
-│   ├── Data/
-│   └── Repository/
-│
-├── StorageSystem.Console/
-│   └── UI/
-│
-└── StorageSystem.Tests/
-    ├── Domain/
-    ├── Application/
-    └── Infrastructure/
+└── test/
+    └── StorageSystem.Tests/
+        ├── Domain/
+        ├── Application/
+        └── Infrastructure/
 ```
+</details>
 
-**Key Design Decisions**
+---
 
-- **Clean Architecture:** strict separation of concerns between Domain, Application, and Infrastructure.
-- **Rich Domain Model:** encapsulated entities with guarded state changes, centralizing business rules.
-- **Dependency Inversion:** the Domain project has zero external dependencies (not even EF Core), ensuring pure, framework-agnostic business rules.
-- **Repository Pattern:** abstracting persistence operations to keep application services decoupled from data access implementations.
-- **Automated Testing:** unit tests validating domain invariants and application orchestration.
+### **Tech Stack**
 
-**Tech Stack**
-
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white)
-![EF Core](https://img.shields.io/badge/EF_Core-512BD4?style=flat&logo=dotnet&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat)
+![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=flat)
+![EF Core](https://img.shields.io/badge/EF_Core-512BD4?style=flat)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat)
 ![xUnit](https://img.shields.io/badge/xUnit-512BD4?style=flat)
+![Spectre.Console](https://img.shields.io/badge/Spectre.Console-5E5E5E?style=flat)
 
-[View Repository](https://github.com/kkcire/storage-system)
+**[Explore Project](https://github.com/kkcire/storage-system)**
 
-### 📫 Contact
+## 📫 Contact
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erick-magagna/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:erickmagagna84@gmail.com)
