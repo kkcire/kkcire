@@ -82,7 +82,7 @@ StorageSystem/
 
 ## OTHER PROJECTS
 
-- **[Hearth](https://github.com/kkcire/hearth)** — Personal finance tracker built to handle credit card billing cycles, installments, and cash-flow vs. accrual accounting rules.
+- **[Hearth](https://github.com/kkcire/hearth-finance)** — Personal finance tracker built to handle credit card billing cycles, installments, and cash-flow vs. accrual accounting rules.
 - **[CDB Calculator](https://github.com/kkcire/cdb-calculator)** — Layered console simulator for Brazilian fixed-income returns, featuring a dynamic interest-rate fluctuation model.
 - **[C# Survival Guide](https://github.com/kkcire/csharp-survival-guide)** — Structured study repository documenting C# and .NET fundamentals, type system mechanics, and control flow exercises.
 
