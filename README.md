@@ -1,4 +1,4 @@
-<pre style="font-family: monospace; font-size: 10px; line-height: 10; overflow-x: auto; color: #ffffff;">
+<pre>
 ███████╗██████╗ ██╗ ██████╗██╗  ██╗   ███╗   ███╗ █████╗  ██████╗  █████╗  ██████╗ ███╗   ██╗ █████╗ 
 ██╔════╝██╔══██╗██║██╔════╝██║ ██╔╝   ████╗ ████║██╔══██╗██╔════╝ ██╔══██╗██╔════╝ ████╗  ██║██╔══██╗
 █████╗  ██████╔╝██║██║     █████╔╝    ██╔████╔██║███████║██║  ███╗███████║██║  ███╗██╔██╗ ██║███████║
@@ -22,28 +22,24 @@ When I'm not studying or coding, I'm probably playing guitar. 🎸
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge)
 
-## PROJECTS
+## FEATURED PROJECT
 
-### 1. STORAGE SYSTEM
+### ⚙️ STORAGE SYSTEM
 
 A console-based storage management application built with C# and .NET, focused on software architecture, domain modeling, and maintainable code. Built as a practical study of how to structure applications and organize responsibilities.
 
 **Features**
 - Brand and product management: register, update (full or partial), delete, search, and list
-- Products linked to brands; a brand can't be deleted while it has products
 - Interactive terminal interface built with Spectre.Console
 
 **Key Design Decisions**
-- **Clean Architecture:** separates business rules, application logic, and infrastructure concerns into distinct layers, with dependencies pointing inward toward the Domain.
-- **Rich Domain Model:** private setters and static factories; entities enforce their own invariants through guard clauses.
-- **Repository Pattern & Dependency Inversion:** repository interfaces live in Application and are implemented in Infrastructure, so services never depend on EF Core.
-- **Database integrity:** unique indexes, restricted deletes, and EF Core migrations applied at startup.
-- **Testing:** unit tests for the domain, plus integration tests against a real SQL Server. Each test gets its own temporary database built from the real migrations, covering services, repositories, and constraints.
-
----
+**Architectural choices**
+- **Clean Architecture:** Kept the domain completely isolated from infrastructure and UI using SOLID principles. Uses Repository Pattern so the Application layer only talks to interfaces, never touching EF Core directly.
+- **Rich Domain Model:** No anemic classes with open setters. Entities protect their own state using private setters, static factories, and guard clauses so invalid states can't exist.
+- **SQL Server Integration Tests:** Unit tests cover the domain, while integration tests spin up temporary databases from real migrations to validate T-SQL constraints and engine-specific behavior — avoiding in-memory providers that hide database quirks.
 
 <details>
-<summary><b>Project Architecture Tree</b></summary>
+<summary><h4><b>Project Architecture Tree<h4></b></summary>
 
 ```text
 StorageSystem/
@@ -73,9 +69,7 @@ StorageSystem/
 ```
 </details>
 
----
-
-### **Tech Stack**
+**Tech Stack**
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat)
 ![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=flat)
@@ -84,7 +78,13 @@ StorageSystem/
 ![xUnit](https://img.shields.io/badge/xUnit-512BD4?style=flat)
 ![Spectre.Console](https://img.shields.io/badge/Spectre.Console-5E5E5E?style=flat)
 
-**[Explore Project](https://github.com/kkcire/storage-system)**
+**[View Project](https://github.com/kkcire/storage-system)**
+
+## OTHER PROJECTS
+
+- **[Hearth](https://github.com/kkcire/hearth)** — Personal finance tracker built to handle credit card billing cycles, installments, and cash-flow vs. accrual accounting rules.
+- **[CDB Calculator](https://github.com/kkcire/cdb-calculator)** — Layered console simulator for Brazilian fixed-income returns, featuring a dynamic interest-rate fluctuation model.
+- **[C# Survival Guide](https://github.com/kkcire/csharp-survival-guide)** — Structured study repository documenting C# and .NET fundamentals, type system mechanics, and control flow exercises.
 
 ## CONTACT
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erick-magagna/)
